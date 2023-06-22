@@ -25,12 +25,13 @@ public class IceClass {
 			ice -= su;
 		}
 	}
-	public void printIce() {
+	public int printIce() {
 		if(ice==0) {
 			System.out.println("얼음이 없습니다");
 		}else {
 			System.out.println("현재 얼음 갯수 : "+ice);
 		}
+		return ice;
 		
 	}
 }

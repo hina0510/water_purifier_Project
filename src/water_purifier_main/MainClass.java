@@ -12,7 +12,8 @@ public static void main(String[] args) {
 	Scanner input = new Scanner(System.in);
 	IceClass ice = new IceClass();
 	TestClass t = new TestClass();
-	int temp = 23, num, num1;
+	filter f = new filter();
+	int temp = 23, num, num1,t_poll=0, i=0;
 	while(true) {
 		System.out.println("1. 온도 조절");
 		System.out.println("2. 필터 오염도 확인");
@@ -26,8 +27,7 @@ public static void main(String[] args) {
 			temp = t.test(temp);
 			break;
 		case 2:
-			filter f = new filter();
-			f.pollution();
+			t_poll = f.pollution();
 			break;
 		case 3:
 			while(true) {
@@ -42,13 +42,15 @@ public static void main(String[] args) {
 				}else if(num1 == 2) {
 					ice.putIce();
 				}else if(num1 == 3) {
-					ice.printIce();
+					i=ice.printIce();
 				}else if(num1 == 4) {
 					break;
 				}
 			}
 			break;
-		case 4:break;
+		case 4:
+			System.out.println("정수기 물의 온도는\n"+temp+"도 입니다.\n 커피기계의 필터 오염도는"+t_poll+"도 입니다.\n 현재 얼음의 갯수는 "+i+"개 입니다");
+			break;
 		}
 	}
 }

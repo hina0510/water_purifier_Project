@@ -1,7 +1,7 @@
 package mingdid1;
 
 public class filter {
-	public void pollution() {
+	public int pollution() {
 		
 		double rand = Math.random() * 100;
 		int t_poll = (int)rand;
@@ -12,7 +12,7 @@ public class filter {
 		}else {
 			System.out.println("사용 가능");
 		}
-		
+		return t_poll;
 	}
 	
 }
