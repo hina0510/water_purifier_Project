@@ -2,6 +2,8 @@ package water_purifier_main;
 
 import java.util.Scanner;
 
+import mingdid1.filter;
+
 public class MainClass {
 public static void main(String[] args) {
 	Scanner input = new Scanner(System.in);
@@ -15,7 +17,10 @@ public static void main(String[] args) {
 		num = input.nextInt();
 		switch (num) {
 		case 1:break;
-		case 2:break;
+		case 2:
+			filter f = new filter();
+			f.pollution();
+			break;
 		case 3:break;
 		case 4:break;
 		}
