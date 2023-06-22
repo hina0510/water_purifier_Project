@@ -1,4 +1,4 @@
-package water_purifier_main;
+package Temp;
 
 import java.util.Scanner;
 
