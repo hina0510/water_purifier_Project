@@ -4,6 +4,8 @@ import java.util.Scanner;
 
 import ice.IceClass;
 
+import mingdid1.filter;
+
 public class MainClass {
 public static void main(String[] args) {
 	Scanner input = new Scanner(System.in);
@@ -18,7 +20,6 @@ public static void main(String[] args) {
 		num = input.nextInt();
 		switch (num) {
 		case 1:break;
-		case 2:break;
 		case 3:
 			while(true) {
 				System.out.println("1. 얼음 생성");
@@ -37,6 +38,10 @@ public static void main(String[] args) {
 					break;
 				}
 			}
+			break;
+		case 2:
+			filter f = new filter();
+			f.pollution();
 			break;
 		case 4:break;
 		}
