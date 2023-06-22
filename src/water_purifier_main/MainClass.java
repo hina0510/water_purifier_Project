@@ -11,8 +11,9 @@ public class MainClass {
 public static void main(String[] args) {
 	Scanner input = new Scanner(System.in);
 	IceClass ice = new IceClass();
+	TestClass t = new TestClass();
+	int temp = 23, num, num1;
 	while(true) {
-		int num, num1;
 		System.out.println("1. 온도 조절");
 		System.out.println("2. 필터 오염도 확인");
 		System.out.println("3. 얼음 잔량 확인");
@@ -20,10 +21,10 @@ public static void main(String[] args) {
 		System.out.print(">>>");
 		num = input.nextInt();
 		
-		TestClass t = new TestClass();
-		
 		switch (num) {
-		case 1:break;
+		case 1:
+			temp = t.test(temp);
+			break;
 		case 2:
 			filter f = new filter();
 			f.pollution();

@@ -2,13 +2,7 @@ package Temp;
 
 import java.util.Scanner;
 
-public class TestClass {
-	
-	// main메소드에 while문 밖에 int temp = 23;[temp는 기본 온도]을 추가해주세요.
-	// switch 내부에는 이렇게 작성해주세요.
-	// case 1:
-    //		temp = t.test(temp);
-	//		break;
+public class TestClass {	
 	
 	public int test(int temp) {
 		Scanner sc = new Scanner(System.in);
