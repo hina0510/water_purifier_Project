@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 import ice.IceClass;
 
+import Temp.TestClass;
 import mingdid1.filter;
 
 public class MainClass {
@@ -18,6 +19,9 @@ public static void main(String[] args) {
 		System.out.println("4. 전체 설정 확인");
 		System.out.print(">>>");
 		num = input.nextInt();
+		
+		TestClass t = new TestClass();
+		
 		switch (num) {
 		case 1:break;
 		case 2:
